@@ -2,21 +2,13 @@ function isAndroid() {
 	return Android;
 }
 
-function isIos() {
-	return webKit && webkit.messageHandlers && webkit.messageHandlers.callback;
-}
-
 function startAction() {
 	try {
-		if(isIos()) {
-			webkit.messageHandlers.callback.postMessage("start");
-		} else {
-			if(isAndroid()) {
+		if(isAndroid()) {
 				Android.startCapture();
-			} else {
-				setText("Not in a mobile device (IOS or Android)");
-			}
- 		}
+		} else {
+			webkit.messageHandlers.callback.postMessage("start");
+		}
 	} catch(err) {
 		setText('[ERROR] Problem calling native app - Not in a mobile device ?');
 	}
