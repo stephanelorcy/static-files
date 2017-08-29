@@ -1,10 +1,11 @@
 function isAndroid() {
-	if(Android) {
-		console.log("Android ....") 
+	var result = !(typeof Android == "undefined");
+	if(result) {
+		console.log("Android");
 	} else {
-		console.log("Not Android ...");
+		console.log("Not Android");
 	}
-	return Android;
+	return result;
 }
 
 function startAction() {
