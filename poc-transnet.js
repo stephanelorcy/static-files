@@ -1,4 +1,5 @@
 function isAndroid() {
+	if(Android) console.log("Android ....");
 	return Android;
 }
 
