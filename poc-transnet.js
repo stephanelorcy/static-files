@@ -1,5 +1,9 @@
 function isAndroid() {
-	if(Android) console.log("Android ....") else console.log("Not Android ...");
+	if(Android) {
+		console.log("Android ....") 
+	} else {
+		console.log("Not Android ...");
+	}
 	return Android;
 }
 
