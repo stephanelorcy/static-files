@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//iPhone OS 10.3.3//EN
+N:Brault;Laurent;;;
+FN: Laurent  Brault 
+ORG:Centravet;
+item1.EMAIL;type=INTERNET;type=pref:lbrault@centravet.fr
+item1.X-ABLabel:_$!<Other>!$_
+TEL;type=WORK;type=VOICE;type=pref:+33 2 96 85 60 41
+END:VCARD
